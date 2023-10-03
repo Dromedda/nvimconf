@@ -1,4 +1,4 @@
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.svelte" },
-  command = ":set syntax=html",
+  command = ":set syntax=svelte",
 })

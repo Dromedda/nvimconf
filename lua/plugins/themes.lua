@@ -10,6 +10,7 @@ return {
       require("bamboo").load()
     end,
   },
+  { "ellisonleao/gruvbox.nvim",        priority = 1000 },
   {
     "rebelot/kanagawa.nvim",
     lazy = false,

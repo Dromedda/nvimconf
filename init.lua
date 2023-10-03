@@ -10,11 +10,21 @@ for _, source in ipairs {
 end
 
 -- Set the theme
---pcall(vim.cmd.colorscheme, "kanagawa-dragon")
+--pcall(vim.cmd.colorscheme, "koehler")
 --pcall(vim.cmd.colorscheme, "torte")
---pcall(vim.cmd.colorscheme, "aura-dark")
---pcall(vim.cmd.colorscheme, "habamax")
+--pcall(vim.cmd.colorscheme, "murphy")
 --pcall(vim.cmd.colorscheme, "kanagawa-dragon")
 --pcall(vim.cmd.colorscheme, "bamboo")
+pcall(vim.cmd.colorscheme, "gruvbox")
+--vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:block"
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
+
+vim.cmd [[
+inoreabbrev btw by the way
+inoreabbrev dont don't
+inoreabbrev u you
+inoreabbrev wtf what the fuck
+inoreabbrev lgtm looks good to me
+inoreabbrev lol AYY ROFLLMAO
+]]
