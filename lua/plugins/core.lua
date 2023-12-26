@@ -3,8 +3,25 @@ return {
   { "AstroNvim/astrotheme", opts = { plugins = { ["dashboard-nvim"] = true } } },
   { "famiu/bufdelete.nvim", cmd = { "Bdelete", "Bwipeout" } },
   { "max397574/better-escape.nvim", event = "InsertCharPre", opts = { timeout = 300 } },
-  { "NMAC427/guess-indent.nvim", event = "User AstroFile", config = require "plugins.configs.guess-indent" },
-  { -- TODO: REMOVE neovim-session-manager with AstroNvim v4
+  {
+    "NMAC427/guess-indent.nvim",
+    event = "User AstroFile",
+    config = require "plugins.configs.guess-indent",
+  },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {},
+    config = function()
+      local harpoon = require "harpoon"
+      harpoon:setup()
+    end,
+  },
+  {
+    -- TODO: REMOVE neovim-session-manager with AstroNvim v4
     "Shatur/neovim-session-manager",
     event = "BufWritePost",
     cmd = "SessionManager",

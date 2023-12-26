@@ -24,6 +24,7 @@ return {
     transparent = false,
   },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  { "kepano/flexoki-neovim",           name = "flexoki" },
   {
     "baliestri/aura-theme",
     lazy = false,
